@@ -1,0 +1,14 @@
+/*sizing image*/
+img {
+  max-width: 30%;
+  max-height: inherit;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("images/wata.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

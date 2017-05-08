@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<!-- linking css files -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+  </head>
+
+<!-- calls root app from angular, calls controller from angular -->
+  <body ng-app="redditMod" ng-controller="reddit">
+
+<!-- calling tsundereSharks.html onto the main html page -->
+    <tsundere-sharks ng-repeat="post in posts"></tsundere-sharks>
+<!-- directive made to switch between views -->
+    <ng-view></ng-view>
+
+
+<!-- linking script and angular files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.js"></script>
+    <script src="script/control.js"></script>
+
+  </body>
+</html>
